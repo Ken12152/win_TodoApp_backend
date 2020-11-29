@@ -2,11 +2,12 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "src/loaders.js",
+  "main": "src/loader.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
-    "production": "pm2 start src/loaders.js --name todo-app"
+    "production": "pm2 start src/loader.js --name todo-app",
+    "stop": "./node_modules/.bin/pm2 stop todo-app"
   },
   "keywords": [],
   "author": "",
